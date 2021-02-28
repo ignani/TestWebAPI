@@ -35,5 +35,10 @@ namespace TestWebAPI.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        public string About()
+        {
+            return "Babu's Weather Forecast App";
+        }
     }
 }
