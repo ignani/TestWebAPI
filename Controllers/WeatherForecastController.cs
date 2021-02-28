@@ -35,10 +35,11 @@ namespace TestWebAPI.Controllers
             })
             .ToArray();
         }
-        [HttpGet]
-        public string About()
+
+        [HttpGet("{uName}")]
+        public string Get(string uName)
         {
-            return "Babu's Weather Forecast App";
+            return $"{uName}'s Weather Forecast App";
         }
     }
 }
